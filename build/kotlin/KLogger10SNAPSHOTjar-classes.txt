@@ -1,0 +1,1 @@
+D:\clone\logger-xy\build\classes\kotlin\main\org\noveltaaker\klogger\AbstractKLogger.class;D:\clone\logger-xy\build\classes\kotlin\main\org\noveltaaker\klogger\KLogger$DefaultImpls.class;D:\clone\logger-xy\build\classes\kotlin\main\org\noveltaaker\klogger\KLogger.class
