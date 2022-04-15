@@ -15,7 +15,7 @@ repositories {
 }
 
 tasks.withType<AbstractArchiveTask> {
-    setProperty("archiveFileName", "QLogger-${project.version}.jar")
+    setProperty("archiveFileName", "JLogger-${project.version}.jar")
 }
 
 dependencies {
