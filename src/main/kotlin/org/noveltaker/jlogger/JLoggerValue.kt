@@ -1,4 +1,4 @@
-package org.noveltaaker.jlogger
+package org.noveltaker.jlogger
 
 interface JLoggerValue {
 
