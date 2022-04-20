@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "org.noveltaker"
-version = "1.0-SNAPSHOT"
+version = "0.0.91"
 
 repositories {
     mavenCentral()
@@ -17,10 +17,23 @@ repositories {
 }
 
 tasks.withType<AbstractArchiveTask> {
-    setProperty("archiveFileName", "JLogger-${project.version}.jar")
+    setProperty("enabled" , "true")
+    setProperty("archiveFileName", "${project.name}-${project.version}.jar")
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.slf4j:slf4j-api:1.7.36")
+}
+
+
+publishing {
+    publications {
+        create("maven_public", MavenPublication::class) {
+            groupId = "${project.group}"
+            artifactId = project.name
+            version = "${project.version}"
+            from(components.getByName("java"))
+        }
+    }
 }
